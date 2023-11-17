@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: trillian-database
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/japower-tenant/trillian/trillian-database@sha256:1fa9ccfc83178e940e9cb3711b7aa8ad967931615d4037d92afeff97520ba204
+        name: my-go
+        resources: {}
+status: {}
